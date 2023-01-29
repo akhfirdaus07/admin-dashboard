@@ -149,7 +149,7 @@ a:hover{
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;
 }
 
@@ -176,7 +176,7 @@ a:hover{
     display:grid;
     grid-template-columns: 0.8rem 1fr;
     grid-template-rows: 1fr auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card>.card-border{
@@ -242,8 +242,48 @@ a:hover{
     color: #5f5f5f;
     margin-top:0;
     margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
+
+.trending .card{
+    
+    background: white;
+    border-radius: 20px;
+    padding:2rem;
+    margin-bottom: 2rem;
+}
+
+.trending .card .account{
+    display:grid;
+    grid-template-columns: min-content max-content;
+
+    align-items: center;
+
+    grid-gap:1rem;
+
+    margin-bottom: 2rem;
+}
+
+.trending .card div img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    grid-row: 1/2;
+}
+
+.trending .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending .text h4{
+    margin:0;
+}
+
+.trending .text p{
+    padding: 0;
+}
 
 footer{
     grid-column: 1/3;
